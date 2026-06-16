@@ -39,7 +39,7 @@ The system is built on three main tables:
 | `Matches`    | Stores upcoming and past match details   |
 | `Bookings`   | Links users to matches via seat bookings |
 
-### ER DIAGRAM (![alt text](image.png))
+### ER DIAGRAM ![alt text](image.png)
 
 ### Relationships
 
