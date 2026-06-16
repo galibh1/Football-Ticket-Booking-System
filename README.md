@@ -49,38 +49,38 @@ The system is built on three main tables:
 
 ---
 
-###  Table Schemas
+## Database Tables
 
-#### Users
+### Users
 
-| Field          | Description              |
-|----------------|--------------------------|
-| `user_id` (PK) | Unique user identifier   |
-| `full_name`    | Full name of the user    |
-| `email`        | User's email address     |
-| `role`         | Role (e.g. fan, admin)   |
-| `phone_number` | Contact number           |
+| Field |
+|---------|
+| user_id (PK) |
+| full_name |
+| email |
+| role |
+| phone_number |
 
-#### Matches
+### Matches
 
-| Field                 | Description                          |
-|-----------------------|--------------------------------------|
-| `match_id` (PK)       | Unique match identifier              |
-| `fixture`             | Match name (e.g. Team A vs Team B)   |
-| `tournament_category` | Tournament name (e.g. Champions League) |
-| `base_ticket_price`   | Standard ticket price                |
-| `match_status`        | Status (e.g. Available, Sold Out)    |
+| Field |
+|---------|
+| match_id (PK) |
+| fixture |
+| tournament_category |
+| base_ticket_price |
+| match_status |
 
-#### Bookings
+### Bookings
 
-| Field             | Description                          |
-|-------------------|--------------------------------------|
-| `booking_id` (PK) | Unique booking identifier            |
-| `user_id` (FK)    | References `Users.user_id`           |
-| `match_id` (FK)   | References `Matches.match_id`        |
-| `seat_number`     | Reserved seat number                 |
-| `payment_status`  | Payment status (e.g. Paid, NULL)     |
-| `total_cost`      | Final cost of the booking            |
+| Field |
+|---------|
+| booking_id (PK) |
+| user_id (FK) |
+| match_id (FK) |
+| seat_number |
+| payment_status |
+| total_cost |
 
 ---
 
